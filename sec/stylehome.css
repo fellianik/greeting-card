@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* background: url(image/background.jpg); */
+    background: url(../image/background.jpg);
+    position: absolute;
+    background-position: 75% 10%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+}
+
+section {
+    color: #fff;
+    padding: 100px;
+}
+
+form {
+    display: none;
+}
+
+#salam {
+    font-family: "Licorice", cursive;
+    font-size: 40px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Oooh Baby", cursive;
+    margin-top: 0.5em;
+}
+
+#ucapan {
+    /* font-size: 10px; */
+    margin-top: 3em;
+    font-family: "Playfair Display", serif;
+    line-height: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+#ucapan #owner {
+    margin-top: 1.5em;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 20px;
+}
+
+#ucapan p#owner span {
+    font-size: medium;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+    section {
+        padding: 50px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    #ucapan p {
+        font-size: 13px;
+    }
+    #ucapan #owner {
+        font-size: 15px;
+    }
+    footer {
+        /* margin: 0px 0px 5px 345px; */
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        background: none;
+    }
+    body {
+        background-image: url(../image/background_mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    section {
+        padding: 25px;
+    }
+    #salam {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    #ucapan {
+        margin-top: 2em;
+    }
+    #ucapan p {
+        font-size: 10px;
+    }
+    #ucapan #owner {
+        font-size: 11px;
+    }
+    #ucapan p#owner span {
+        font-size: smaller;
+    }
+    footer {
+        font-size: 10px;
+    }
+}

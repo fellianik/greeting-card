@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Merry Christmas!</title>
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <p id="salam">Dear, <span id="result"></span></p>
+            <h1>Merry Christmas to You
+            <br> and Your Family</h1>
+            
+            <div id="ucapan">
+                <p>From the bottom of our heart,<br> We wish your divine favor, good health, prosperity, and long life.
+                    <br> <br>
+                    Receive many shiny packages and bright lights <br> as it is a time for sharing love and togetherness. &#128519</p>
+                <p id="owner">From Hariono, Resika, Felli, William & Laurencia <span>&#128151</span></p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Copyright by Felliani Kurniawati</p>
+        </footer>
+
+        <script>
+            var nama = localStorage.getItem("nama");
+            document.getElementById("result").innerHTML = nama;
+        </script>
+    </body>
+</html>
