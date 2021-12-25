@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input Your Name</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="first">
+            <h1>My Present for You</h1>
+            <form action="first.html" id="form">
+                <label for="nama">What's your name?</label><br />
+                <input type="text" name="nama" id="nama" placeholder="Please fill in your name" required /><br />
+                <a href="sec/home.html"><input type="button" onclick="setData()" class="btn" value="Submit" /></a>
+            </form>
+        </section>
+    </body>
+    <script>
+        function setData() {
+            var nama = document.getElementById("nama").value;
+            if (nama.trim().length == 0) {
+                alert("Fill your name");
+                return;
+            }
+            localStorage.setItem("nama", nama);
+            document.getElementById("form").submit();
+        }
+    </script>
+</html>
